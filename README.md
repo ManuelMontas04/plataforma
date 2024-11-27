@@ -63,6 +63,30 @@ This section has moved here: [https://facebook.github.io/create-react-app/docs/a
 
 ### Deployment
 
+### React router
+https://reactrouter.com/
+
+npm install react-router-dom
+
+app.js
+import { BrowserRouter as Router, Route, Switch } from 'react-router-dom';
+
+ carpeta componenete
+ Principal.jsx adentro pongo el codigo a continuacion
+
+ function App() {
+  return (
+    <Router>
+      <Switch>
+        <Route path="/" exact component={Home} />
+        <Route path="/about" component={About} />
+        <Route path="/contact" component={Contact} />
+      </Switch>
+    </Router>
+  );
+}
+
+
 This section has moved here: [https://facebook.github.io/create-react-app/docs/deployment](https://facebook.github.io/create-react-app/docs/deployment)
 
 ### `npm run build` fails to minify
